@@ -216,6 +216,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: black;}
     background-position: center;
     height:890px;
 }
+.documentation-link:hover {
+    color: teal;
+}
+
 .welcome-hero3{
     display: flex;
     align-items: center;
