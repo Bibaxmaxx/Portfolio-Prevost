@@ -1,66 +1,251 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html class="no-js" lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Stage BUT 3 - Prevost Raphael</title>
-    <!-- Inclure les liens vers les fichiers CSS -->
+
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/gojoo.jpg"/>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Stage BUT 3 - MELIES Business Angels</h1>
+    <!-- top-area Start -->
+    <header class="top-area">
+        <div class="header-area">
+            <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="index.html">Accueil</a>
+                    </div>
+                    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="smooth-menu"><a href="#context">Contexte</a></li>
+                            <li class="smooth-menu"><a href="#mission">Missions</a></li>
+                            <li class="smooth-menu"><a href="#skills">Compétences</a></li>
+                            <li class="smooth-menu"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+
+    <!-- welcome-hero start -->
+    <section id="welcome-hero" class="welcome-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="header-text">
+                        <h2>Stage BUT 3 - MELIES Business Angels</h2>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="context" class="about">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Contexte du stage</h2>
+            </div>
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="single-about-txt">
+                            <p>Stage de 10 semaines au sein de MELIES Business Angels, une association qui accompagne les startups dans leur levée de fonds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Missions principales</h2>
+            </div>
+            <div class="mission-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <ul>
+                            <li>Optimisation d'Airtable : Finaliser et optimiser la base de données Airtable</li>
+                            <li>Développement d'interfaces entre Airtable et Dealflux</li>
+                            <li>Synchronisation des données entre les deux systèmes</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6"> 
+                        <ul>
+                            <li>Documentation du SI pour les utilisateurs</li>
+                            <li>Tests et débogage du système</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="realisation" class="realisation">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Réalisations et résultats</h2>
+            </div>
+            <div class="realisation-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Conception de la solution de synchronisation</h3>
+                        <ul>
+                            <li>Analyse approfondie des schémas de données d'Airtable et Deal-Flux</li>
+                            <li>Normalisation des formats de données pour assurer la compatibilité</li>
+                            <li>Modélisation UML : diagrammes de flux, cas d'utilisation, séquence</li>
+                        </ul>
+                        <img src="assets/images/portfolio/diagramme-flux-mba.png" alt="Diagramme de flux MELIES Business Angels">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Développement du système de webhook</h3>
+                        <ul>
+                            <li>Configuration des webhooks dans Airtable pour chaque événement à synchroniser</li>
+                            <li>Création d'une API Airtable personnalisée sécurisée</li>
+                            <li>Développement de scripts JavaScript pour les requêtes POST et PATCH</li>
+                            <li>Utilisation de Directus pour optimiser la gestion des API REST</li>
+                        </ul>
+                        <img src="assets/images/portfolio/code-requete-post.png" alt="Exemple de code pour une requête POST">
+
+                        <h3>Tests et validation</h3>
+                        <ul>
+                            <li>Tests unitaires des composants du système</li> 
+                            <li>Tests d'intégration simulant différents scénarios de synchronisation</li>
+                            <li>Tests de robustesse dans des conditions d'erreur</li>
+                            <li>Tests utilisateurs avec l'équipe MELIES Business Angels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Compétences du BUT travaillées durant le stage</h2>
+            </div>
+            <div class="skill-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="single-skill-content">
+                            <h4>Réaliser un développement d'application <span>(Niv.4)</span></h4>
+                            <div class="barWrapper">
+                                <span class="progressText">Conception d'une solution robuste de synchronisation</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="single-skill-content">
+                            <h4>Optimiser des applications informatiques <span>(Niv.3)</span></h4>
+                            <div class="barWrapper">
+                                <span class="progressText">Optimisation des performances du système de synchronisation</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="single-skill-content">
+                            <h4>Administrer des systèmes informatiques communicants complexes <span>(Niv.3)</span></h4>
+                            <div class="barWrapper">
+                                <span class="progressText">Déploiement et maintenance du système de synchronisation</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="single-skill-content">
+                            <h4>Conduire un projet <span>(Niv.3)</span></h4>
+                            <div class="barWrapper">
+                                <span class="progressText">Gestion du projet de synchronisation de bout en bout</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="single-skill-content">
+                            <h4>Collaborer au sein d'une équipe informatique <span>(Niv.3)</span></h4>
+                            <div class="barWrapper">
+                                <span class="progressText">Intégration dans l'équipe de MELIES Business Angels</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="10" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <h2>Contexte du stage</h2>
-    <p>Stage de 10 semaines au sein de MELIES Business Angels, une association qui accompagne les startups dans leur levée de fonds.</p>
+    <section id="contact" class="contact">
+        <div class="section-heading text-center">
+            <h2>Télecharger le rapport</h2>
+        </div>
+        <div class="container">
+            <div class="contact-content text-center">
+                <a href="assets/download/Rapport_de_stage_Prevost_Raphael.pdf" class="btn btn-primary">Telecharger le rapport</a>  
+            </div>
+        </div>
+    </section>
     
-    <h2>Missions principales</h2>
-    <ul>
-        <li>Optimisation d'Airtable : Finaliser et optimiser la base de données Airtable</li>
-        <li>Développement d'interfaces entre Airtable et Dealflux</li>  
-        <li>Synchronisation des données entre les deux systèmes</li>
-        <li>Documentation du SI pour les utilisateurs</li>
-        <li>Tests et débogage du système</li>
-    </ul>
+    <!--footer-copyright start-->
+    <footer id="footer-copyright" class="footer-copyright">
+        <div class="container">
+            <div class="hm-footer-copyright text-center">
+                <p>
+                    &copy; copyright Prevost Raphael.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--footer-copyright end-->
 
-    <h2>Réalisations et résultats</h2>
-    <h3>Conception de la solution de synchronisation</h3>
-    <ul>
-        <li>Analyse approfondie des schémas de données d'Airtable et Deal-Flux</li>
-        <li>Normalisation des formats de données pour assurer la compatibilité</li>
-        <li>Modélisation UML : diagrammes de flux, cas d'utilisation, séquence</li> 
-    </ul>
-    <img src="assets/images/portfolio/diagramme-flux-mba.png" alt="Diagramme de flux MELIES Business Angels">
-      
-    <h3>Développement du système de webhook</h3>  
-    <ul>
-        <li>Configuration des webhooks dans Airtable pour chaque événement à synchroniser</li>
-        <li>Création d'une API Airtable personnalisée sécurisée</li>
-        <li>Développement de scripts JavaScript pour les requêtes POST et PATCH</li>
-        <li>Utilisation de Directus pour optimiser la gestion des API REST</li>
-    </ul>
-    <img src="assets/images/portfolio/code-requete-post.png" alt="Exemple de code pour une requête POST">
-
-    <h3>Tests et validation</h3>
-    <ul>  
-        <li>Tests unitaires des composants du système</li>
-        <li>Tests d'intégration simulant différents scénarios de synchronisation </li>
-        <li>Tests de robustesse dans des conditions d'erreur</li>  
-        <li>Tests utilisateurs avec l'équipe MELIES Business Angels</li>
-    </ul>
-    
-    <h2>Compétences du BUT travaillées durant le stage</h2>
-    <ul>
-      <li><strong>Compétence 1 (niv. 4) - Réaliser un développement d'application</strong> : Conception d'une solution robuste de synchronisation pour gérer les mises à jour concurrentes et assurer l'intégrité des données via un système de versioning.</li>  
-      
-      <li><strong>Compétence 2 (niv. 3) - Optimiser des applications informatiques</strong> : Optimisation des performances du système de synchronisation avec mise en cache et traitement par lots pour réduire la charge sur les APIs.</li>
-
-      <li><strong>Compétence 3 (niv. 3) - Administrer des systèmes informatiques communicants complexes</strong> : Déploiement et maintenance du système de synchronisation. Approche de test pour assurer la fiabilité et robustesse dans diverses conditions d'utilisation.</li>
-
-      <li><strong>Compétence 5 (niv. 3) - Conduire un projet</strong> : Gestion du projet de synchronisation de bout en bout. Identification des besoins métiers, conception, développement, tests, documentation utilisateur et livraison.</li>
-
-      <li><strong>Compétence 6 (niv. 3) - Collaborer au sein d'une équipe informatique</strong> : Intégration dans l'équipe de MELIES Business Angels. Communication régulière avec différentes parties prenantes durant le projet.</li>
-    </ul>
-    
-    <a href="assets/download/Rapport_de_stage_Prevost_Raphael.pdf" download>Télécharger le rapport de stage complet</a>
-
+    <!-- Include all js compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
