@@ -42,13 +42,23 @@ $(document).ready(function(){
 		
 		//=============
 
-		$('li.smooth-menu a').bind("click", function(event) {
-			event.preventDefault();
-			var anchor = $(this);
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top - 0
-			}, 1200,'easeInOutExpo');
-		});
+		$(document).ready(function() {
+    console.log("Document ready");
+    
+    $('li.smooth-menu a').on('click', function(event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        console.log("Clicked link to: " + target);
+        
+        if ($(target).length) {
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1200);
+        } else {
+            console.error("Target section not found: " + target);
+        }
+    });
+});
 		
 		$('body').scrollspy({
 			target:'.navbar-collapse',
